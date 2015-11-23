@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "CustomTableCell.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController
 
+{
+    // mutable array for store url json parse data
+    NSMutableArray *arrJsonList;
+}
 
 @end
 
